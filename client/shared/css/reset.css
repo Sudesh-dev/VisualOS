@@ -1,0 +1,64 @@
+/* ========== Box Model ========== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Root ========== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== Body ========== */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ========== Media ========== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========== Forms ========== */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ========== Links ========== */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========== Lists ========== */
+
+ul,
+ol {
+    list-style: none;
+}
