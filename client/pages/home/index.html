@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         Meta
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================
+         Title
+    ========================== -->
+    <title>VisualOS | Home</title>
+
+    <!-- =========================
+         Favicon
+    ========================== -->
+    <link rel="icon" href="../../assets/logos/logo.svg" type="image/svg+xml">
+
+    <!-- =========================
+         Global CSS
+    ========================== -->
+    <link rel="stylesheet" href="../../shared/css/reset.css">
+    <link rel="stylesheet" href="../../shared/css/variables.css">
+    <link rel="stylesheet" href="../../shared/css/theme.css">
+    <link rel="stylesheet" href="../../shared/css/typography.css">
+    <link rel="stylesheet" href="../../shared/css/utilities.css">
+    <link rel="stylesheet" href="../../shared/css/global.css">
+
+    <!-- =========================
+         Navbar CSS
+    ========================== -->
+    <link rel="stylesheet" href="../../components/navbar/style.css">
+
+    <!-- =========================
+         Lucide Icons
+    ========================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <!-- =========================
+         Navbar
+    ========================== -->
+
+    <nav class="navbar">
+
+        <a href="#" class="navbar__logo">
+
+            <div class="logo-icon">
+                <i data-lucide="cpu"></i>
+            </div>
+
+            <span class="logo-text">
+                VisualOS
+            </span>
+
+        </a>
+
+        <ul class="navbar__nav">
+
+            <li>
+                <a href="#" class="nav-link active">
+                    <i data-lucide="house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-link">
+                    <i data-lucide="microchip"></i>
+                    <span>CPU</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-link">
+                    <i data-lucide="memory-stick"></i>
+                    <span>Memory</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-link">
+                    <i data-lucide="files"></i>
+                    <span>Paging</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-link">
+                    <i data-lucide="hard-drive"></i>
+                    <span>Disk</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-link">
+                    <i data-lucide="shield-alert"></i>
+                    <span>Deadlock</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="navbar__actions">
+
+            <button class="icon-btn">
+                <i data-lucide="search"></i>
+            </button>
+
+            <button class="icon-btn" id="theme-toggle">
+                <i data-lucide="moon"></i>
+            </button>
+
+            <a href="https://github.com/" target="_blank" class="github-btn">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+            </a>
+
+            <button class="login-btn">
+                Login
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- =========================
+         Hero Section
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <h1>
+                Welcome to VisualOS
+            </h1>
+
+            <p>
+                Learn Operating System algorithms through beautiful,
+                interactive visualizations.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+         Scripts
+    ========================== -->
+
+    <script src="../../components/navbar/script.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    background: var(--navbar-bg);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid var(--border-color);
+
+    transition: all var(--transition-normal);
+}
+
+/* ===========================================
+   LOGO
+=========================================== */
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-primary);
+
+    color: white;
+
+    border-radius: var(--radius-md);
+
+    transition: all var(--transition-fast);
+}
+
+.logo-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.logo-text {
+    font-size: 1.45rem;
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+    letter-spacing: .5px;
+}
+
+.navbar__logo:hover .logo-icon {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+/* ===========================================
+   NAVIGATION
+=========================================== */
+
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border-radius: var(--radius-md);
+
+    text-decoration: none;
+
+    color: var(--text-secondary);
+
+    font-weight: 500;
+
+    transition: all var(--transition-fast);
+}
+
+.nav-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.nav-link:hover {
+    background: var(--surface-hover);
+
+    color: var(--color-primary);
+
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: var(--color-primary);
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(59,130,246,.25);
+}
+
+/* ===========================================
+   RIGHT SIDE
+=========================================== */
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ===========================================
+   ICON BUTTONS
+=========================================== */
+
+.icon-btn {
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--surface);
+
+    color: var(--text-primary);
+
+    cursor: pointer;
+
+    transition: all var(--transition-fast);
+}
+
+.icon-btn svg {
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.icon-btn:hover {
+
+    background: var(--color-primary);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+/* ===========================================
+   GITHUB BUTTON
+=========================================== */
+
+.github-btn {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    text-decoration: none;
+
+    border-radius: var(--radius-md);
+
+    background: var(--surface);
+
+    color: var(--text-primary);
+
+    transition: all var(--transition-fast);
+
+}
+
+.github-btn:hover {
+
+    background: #181717;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+/* ===========================================
+   LOGIN BUTTON
+=========================================== */
+
+.login-btn {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: var(--radius-md);
+
+    background: var(--color-primary);
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all var(--transition-fast);
+
+}
+
+.login-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 24px rgba(59,130,246,.30);
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media (max-width:1200px){
+
+    .navbar{
+
+        padding:0 24px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .navbar{
+
+        height:70px;
+
+    }
+
+    .navbar__nav{
+
+        display:none;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .logo-text{
+
+        display:none;
+
+    }
+
+    .github-btn span{
+
+        display:none;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .login-btn{
+
+        display:none;
+
+    }
+
+}
