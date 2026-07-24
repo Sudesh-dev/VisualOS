@@ -3,25 +3,31 @@
 
 <head>
 
-    <!-- =========================
-         Meta
-    ========================== -->
+    <!-- ========================================= -->
+    <!-- Meta -->
+    <!-- ========================================= -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- =========================
-         Title
-    ========================== -->
-    <title>VisualOS | Home</title>
+    <script src="home.js" defer></script>
 
-    <!-- =========================
-         Favicon
-    ========================== -->
-    <link rel="icon" href="../../assets/logos/logo.svg" type="image/svg+xml">
+    <!-- ========================================= -->
+    <!-- Title -->
+    <!-- ========================================= -->
 
-    <!-- =========================
-         Global CSS
-    ========================== -->
+    <title>VisualOS | Interactive Operating System Visualizer</title>
+
+    <!-- ========================================= -->
+    <!-- Favicon -->
+    <!-- ========================================= -->
+
+    <link rel="icon" href="../../assets/logos/logo.svg">
+
+    <!-- ========================================= -->
+    <!-- Global CSS -->
+    <!-- ========================================= -->
+
     <link rel="stylesheet" href="../../shared/css/reset.css">
     <link rel="stylesheet" href="../../shared/css/variables.css">
     <link rel="stylesheet" href="../../shared/css/theme.css">
@@ -29,23 +35,31 @@
     <link rel="stylesheet" href="../../shared/css/utilities.css">
     <link rel="stylesheet" href="../../shared/css/global.css">
 
-    <!-- =========================
-         Navbar CSS
-    ========================== -->
+    <!-- ========================================= -->
+    <!-- Navbar -->
+    <!-- ========================================= -->
+
     <link rel="stylesheet" href="../../components/navbar/style.css">
 
-    <!-- =========================
-         Lucide Icons
-    ========================== -->
+    <!-- ========================================= -->
+    <!-- Home Page -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet" href="./home.css">
+
+    <!-- ========================================= -->
+    <!-- Lucide Icons -->
+    <!-- ========================================= -->
+
     <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
 
 <body>
 
-    <!-- =========================
-         Navbar
-    ========================== -->
+    <!-- ========================================= -->
+    <!-- Navbar -->
+    <!-- ========================================= -->
 
     <nav class="navbar">
 
@@ -71,35 +85,35 @@
             </li>
 
             <li>
-                <a href="#" class="nav-link">
+                <a href="#">
                     <i data-lucide="microchip"></i>
                     <span>CPU</span>
                 </a>
             </li>
 
             <li>
-                <a href="#" class="nav-link">
+                <a href="#">
                     <i data-lucide="memory-stick"></i>
                     <span>Memory</span>
                 </a>
             </li>
 
             <li>
-                <a href="#" class="nav-link">
+                <a href="#">
                     <i data-lucide="files"></i>
                     <span>Paging</span>
                 </a>
             </li>
 
             <li>
-                <a href="#" class="nav-link">
+                <a href="#">
                     <i data-lucide="hard-drive"></i>
                     <span>Disk</span>
                 </a>
             </li>
 
             <li>
-                <a href="#" class="nav-link">
+                <a href="#">
                     <i data-lucide="shield-alert"></i>
                     <span>Deadlock</span>
                 </a>
@@ -113,13 +127,23 @@
                 <i data-lucide="search"></i>
             </button>
 
-            <button class="icon-btn" id="theme-toggle">
+            <button
+                class="icon-btn"
+                id="theme-toggle">
+
                 <i data-lucide="moon"></i>
+
             </button>
 
-            <a href="https://github.com/" target="_blank" class="github-btn">
+            <a
+                href="https://github.com/"
+                target="_blank"
+                class="github-btn">
+
                 <i data-lucide="github"></i>
+
                 <span>GitHub</span>
+
             </a>
 
             <button class="login-btn">
@@ -130,35 +154,203 @@
 
     </nav>
 
-    <!-- =========================
-         Hero Section
-    ========================== -->
+    <!-- ========================================= -->
+    <!-- HERO -->
+    <!-- ========================================= -->
 
     <main>
 
         <section class="hero">
 
-            <h1>
-                Welcome to VisualOS
-            </h1>
+            <!-- Background -->
 
-            <p>
-                Learn Operating System algorithms through beautiful,
-                interactive visualizations.
-            </p>
+            <div class="hero__background">
+
+                <div class="blur blur-one"></div>
+                <div class="blur blur-two"></div>
+                <div class="grid"></div>
+
+            </div>
+
+            <div class="container hero__container">
+
+                <!-- LEFT -->
+
+                <div class="hero__content">
+
+                    <div class="hero__badge">
+
+                        <i data-lucide="sparkles"></i>
+
+                        <span>
+                            Open Source Learning Platform
+                        </span>
+
+                    </div>
+
+                    <h1>
+
+                        Learn
+
+                        <span>Operating Systems</span>
+
+                        Through Interactive
+
+                        Visual Simulations
+
+                    </h1>
+
+                    <p>
+
+                        Master CPU Scheduling,
+                        Memory Management,
+                        Page Replacement,
+                        Disk Scheduling,
+                        and Deadlock Detection
+                        with beautiful real-time visualizations.
+
+                    </p>
+
+                    <div class="hero__buttons">
+
+                        <button class="primary-btn">
+
+                            Start Learning
+
+                        </button>
+
+                        <button class="secondary-btn">
+
+                            Explore Algorithms
+
+                        </button>
+
+                    </div>
+
+                    <div class="hero__stats">
+
+                        <div>
+
+                            <h2>5+</h2>
+
+                            <span>Algorithms</span>
+
+                        </div>
+
+                        <div>
+
+                            <h2>100%</h2>
+
+                            <span>Interactive</span>
+
+                        </div>
+
+                        <div>
+
+                            <h2>Open</h2>
+
+                            <span>Source</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="hero__visual">
+
+                    <div class="dashboard">
+
+                        <div class="dashboard__header">
+
+                            <div class="dashboard__dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <h3>
+
+                                CPU Scheduling
+
+                            </h3>
+
+                        </div>
+
+                        <div class="dashboard__body">
+
+                            <div class="process">
+
+                                <span>P1</span>
+
+                                <div class="bar p1"></div>
+
+                            </div>
+
+                            <div class="process">
+
+                                <span>P2</span>
+
+                                <div class="bar p2"></div>
+
+                            </div>
+
+                            <div class="process">
+
+                                <span>P3</span>
+
+                                <div class="bar p3"></div>
+
+                            </div>
+
+                            <div class="process">
+
+                                <span>P4</span>
+
+                                <div class="bar p4"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dashboard__footer">
+
+                            Average Waiting Time
+
+                            <strong>
+
+                                3.2 ms
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
-    <!-- =========================
-         Scripts
-    ========================== -->
+    <!-- ========================================= -->
+    <!-- Scripts -->
+    <!-- ========================================= -->
 
     <script src="../../components/navbar/script.js"></script>
 
+    <script src="./script.js"></script>
+
     <script>
+
         lucide.createIcons();
+
     </script>
 
 </body>
